@@ -1,0 +1,117 @@
+.pink-bg {
+    background-color: #ffe6f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.pink-bg .service-info h3,
+.pink-bg .service-info p {
+    font-weight: bold;
+    color: #000;
+}
+
+.light-blue-bg {
+    background-color: #ffe798;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.light-blue-bg .service-info h3,
+.light-blue-bg .service-info p {
+    font-weight: bold;
+    color: #000;
+}
+
+.section-spacer {
+    height: 600px; /* Adjust as needed, e.g., 40px, 80px */
+}
+
+.bg-languages-section {
+    background-color: #f6fbff; /* light blue, change as desired */
+    border-radius: 8px;         /* Optional: rounded corners */
+    padding-top: 25px;          /* Optional: extra spacing */
+    padding-bottom: 25px;
+}
+
+.bg-white-section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.certification-img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
+
+.skill-icon {
+    height: 2em;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 5px; /* Increased space */
+}
+
+.skill-icon-small {
+    height: 0.75em;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 3px; /* Increased space */
+    margin-right: 4px; 
+}
+
+.skill-icon-large {
+    height: 3em;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 5px; /* Increased space */
+}
+
+.text-dark {
+    color: #222;
+}
+
+.logo-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+.logo-img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  transition: opacity 0.3s;     /* Optional: fade when hovered */
+}
+
+.view-details-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none; /* lets the overlay not block clicks, unless you want it clickable */
+}
+
+.logo-wrapper:hover .view-details-overlay,
+.logo-wrapper:focus .view-details-overlay {
+  opacity: 1;
+}
+
+/* Optionally fade logo */
+.logo-wrapper:hover .logo-img {
+  opacity: 0.45;
+}

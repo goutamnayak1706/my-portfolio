@@ -103,3 +103,51 @@
 		}
 	}	
 }
+
+.logo-item {
+  position: relative;
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 14px 2px rgba(33,33,33,0.07);
+  cursor: pointer;
+  overflow: hidden;
+  width: 240px;
+  height: 80px;
+
+  .logo-img {
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    margin: 0 auto;
+    object-fit: contain;
+    z-index: 1;
+    transition: transform .3s cubic-bezier(.42,0,.58,1);
+    position: relative;
+  }
+
+  .logo-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1em;
+    background: rgba(0,0,0,0);
+    pointer-events: none;
+    z-index: 2;
+    transition: background .3s cubic-bezier(.42,0,.58,1), opacity .3s cubic-bezier(.42,0,.58,1);
+    opacity: 0;
+  }
+  &:hover .logo-overlay {
+    background: rgba(0,0,0,.5);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  &:hover .logo-img {
+    transform: scale(1.07);
+  }
+}
